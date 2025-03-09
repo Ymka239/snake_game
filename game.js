@@ -1847,9 +1847,9 @@ function resizeCanvas() {
     // Update the tooltip text depending on the device
     const infoText = document.querySelector('.info');
     if (window.innerWidth <= 768) {
-        infoText.textContent = 'Используйте кнопки-стрелки для управления змейкой';
+        infoText.textContent = 'Use the arrow buttons to control the snake';
     } else {
-        infoText.textContent = 'Используйте стрелки на клавиатуре для управления змейкой';
+        infoText.textContent = 'Use the arrows on your keyboard to control the snake';
     }
 
     // Add crazy mode indicator if it is active
@@ -1857,7 +1857,7 @@ function resizeCanvas() {
         if (!document.querySelector('.insane-indicator')) {
             const insaneIndicator = document.createElement('div');
             insaneIndicator.className = 'insane-indicator';
-            insaneIndicator.textContent = '🔥 БЕЗУМИЕ 🔥';
+            insaneIndicator.textContent = '🔥 INSANE 🔥';
             insaneIndicator.style.position = 'absolute';
             insaneIndicator.style.top = '5px';
             insaneIndicator.style.left = '50%';
