@@ -28,6 +28,7 @@ If you'd like to run the game locally, follow these steps:
 - Classic Snake gameplay
 - Simple and clean design
 - Easy-to-read and maintainable code
+- A mysterious challenge: be sure to try the Insane mode!
 
 ## Acknowledgements
 
