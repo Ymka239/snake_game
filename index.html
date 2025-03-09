@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <span class="theme-icon"></span>
+        </label>
+    </div>
+    <div class="game-container">
+        <div class="game-header">
+            <h2>Snake Game</h2>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        <div class="game-area">
+            <canvas id="game" width="400" height="400"></canvas>
+            <div class="game-settings" id="game-settings">
+                <div class="setting-group">
+                    <div class="setting-title">Mode</div>
+                    <div class="setting-options">
+                        <label class="mode-label">
+                            <input type="radio" name="game-mode" id="mode-walls" value="walls">
+                            <span class="mode-text">With walls</span>
+                        </label>
+                        <label class="mode-label">
+                            <input type="radio" name="game-mode" id="mode-no-walls" value="no-walls" checked>
+                            <span class="mode-text">No walls</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <div class="setting-title">Speed</div>
+                    <div class="setting-options">
+                        <label class="mode-label">
+                            <input type="radio" name="game-speed" id="speed-slow" value="slow">
+                            <span class="mode-text">Slow</span>
+                        </label>
+                        <label class="mode-label">
+                            <input type="radio" name="game-speed" id="speed-medium" value="medium" checked>
+                            <span class="mode-text">Medium</span>
+                        </label>
+                        <label class="mode-label">
+                            <input type="radio" name="game-speed" id="speed-fast" value="fast">
+                            <span class="mode-text">Fast</span>
+                        </label>
+                        <label class="mode-label insane-mode">
+                            <input type="radio" name="game-speed" id="speed-insane" value="insane">
+                            <span class="mode-text">Insane</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn">Start Game</button>
+            <div class="game-controls">
+                <div class="arrow-controls">
+                    <button class="arrow up" data-key="ArrowUp">↑</button>
+                    <div class="middle-arrows">
+                        <button class="arrow left" data-key="ArrowLeft">←</button>
+                        <button class="arrow right" data-key="ArrowRight">→</button>
+                    </div>
+                    <button class="arrow down" data-key="ArrowDown">↓</button>
+                </div>
+            </div>
+            <div class="info">Use keyboard arrow keys to control the snake</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
